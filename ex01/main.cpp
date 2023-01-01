@@ -2,7 +2,18 @@
 
 int main(void)
 {
-	Contact z;
-	z.seting_darkest_secret("hage");
-	printf("%s\n", z.get_darkest_secret().c_str());
+	std::string	s;
+	while (std::cin.eof() == 0)
+	{
+		std::cout << "Enter: -> ---ADD/SEARCH/EXIT--- <- " << std::endl;
+		std::cin >> s;
+		if (s == "ADD")
+			std::cout << "this is add" << std::endl;
+			else if(s == "SEARCH")
+			std::cout << "this is search" << std::endl;
+			else if(s == "EXIT")
+			std::cout << "this is exit" << std::endl;
+		//break;
+	}
+	
 }

@@ -2,6 +2,7 @@ NAME	= phone
 
 SRCS	= main.cpp \
 		  Contact.cpp \
+		  phonebook.cpp
 
 OBJS		= $(SRCS:%.c=%.o)
 
