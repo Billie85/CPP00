@@ -1,10 +1,8 @@
 #include "Contact.hpp"
-#include <cstdio>
 
-
-int main(int argc, char *argv[])
+int main(void)
 {
 	Contact z;
-	z.seting_darkest_secret("ayumi");
+	z.seting_darkest_secret("hage");
 	printf("%s\n", z.get_darkest_secret().c_str());
 }
