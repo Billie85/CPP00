@@ -5,7 +5,6 @@
 int main(int argc, char *argv[])
 {
 	Contact z;
-
-	z.set_first_name(argv[1]);
-	printf("%s\n", z.get_first_name().c_str());
+	z.seting_darkest_secret("ayumi");
+	printf("%s\n", z.get_darkest_secret().c_str());
 }
