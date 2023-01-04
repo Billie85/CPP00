@@ -8,8 +8,16 @@ Contact::~Contact()
 {
 } */
 
-void Contact::seting_first_name(std::string first_name)
+void Contact::seting_first_name(void)
 {
+	std::string first_name;
+
+	first_name == "";
+	while (first_name == "")
+	{
+		std::cout << "input First Name     : ";
+		getline(std::cin, first_name);
+	}
 	this->first_name = first_name;
 }
 void Contact::seting_last_name(std::string last_name)

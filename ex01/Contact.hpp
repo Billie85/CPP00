@@ -1,3 +1,6 @@
+#ifndef CONTACT_HPP
+#define CONTACT_HPP
+
 #include <iostream>
 #include <cstdio>
 #include <string>
@@ -11,7 +14,7 @@ private:
 	std::string phone_number;
 	std::string darkest_secret;
 public:
-	void seting_first_name(std::string first_name);
+	void seting_first_name(void);
 	void seting_last_name(std::string last_name);
 	void seting_nick_name(std::string nick_name);
 	void seting_phone_number(std::string phone_number);
@@ -22,3 +25,5 @@ public:
 	std::string get_phone_number(void);
 	std::string get_darkest_secret(void);
 };
+
+#endif
