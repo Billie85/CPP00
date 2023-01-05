@@ -6,14 +6,14 @@ SRCS	= main.cpp \
 
 OBJS		= $(SRCS:%.c=%.o)
 
-CC			= c++
+CXX			= c++
 
-CFLAGS	= -Wall -Wextra -Werror -std=c++98
+CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
 all		: $(NAME)
 
 $(NAME)	: $(SRCS)
-		$(CC) $(CFLAGS) -o $@ $^
+		$(CXX) $(CXXFLAGS) -o $@ $^ -lreadline
 
 clean	:
 

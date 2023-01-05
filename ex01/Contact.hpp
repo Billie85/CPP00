@@ -4,6 +4,8 @@
 #include <iostream>
 #include <cstdio>
 #include <string>
+#include <readline/readline.h>
+#include <readline/history.h>
 
 class Contact
 {
@@ -15,10 +17,10 @@ private:
 	std::string darkest_secret;
 public:
 	void seting_first_name(void);
-	void seting_last_name(std::string last_name);
-	void seting_nick_name(std::string nick_name);
-	void seting_phone_number(std::string phone_number);
-	void seting_darkest_secret(std::string darkest_secret);
+	void seting_last_name(void);
+	void seting_nick_name(void);
+	void seting_phone_number(void);
+	void seting_darkest_secret(void);
 	std::string get_first_name(void);
 	std::string get_last_name(void);
 	std::string get_nick_name(void);

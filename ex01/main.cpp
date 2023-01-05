@@ -13,10 +13,10 @@ int main(void)
 
 		if (s == "ADD")
 			p.add();
-		/* 	else if(s == "SEARCH")
+			else if(s == "SEARCH")
 			std::cout << "this is search" << std::endl;
 			else if(s == "EXIT")
-			std::cout << "this is exit" << std::endl; */
+			std::cout << "this is exit" << std::endl;
 		//break;
 	}
 	return (0);
