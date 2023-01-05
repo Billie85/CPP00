@@ -2,16 +2,13 @@
 
 void Contact::seting_first_name(void)
 {
-	std::string firstname;
-
-	//firstname = "";
 	while (1)
 	{
 		first_name = readline("input First Name   :");
 		if (!first_name.empty())
 			break;
 	}
-	this->first_name = firstname;
+	this->first_name = first_name;
 }
 
 void Contact::seting_last_name(void)

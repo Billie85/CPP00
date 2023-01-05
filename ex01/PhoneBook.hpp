@@ -13,6 +13,7 @@ public:
 	PhoneBook(){};
 	~PhoneBook(){};
 	void add(void);
+	void search(void);
 	//void display(Contact in);
 };
 #endif
