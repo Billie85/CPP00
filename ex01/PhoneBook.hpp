@@ -10,10 +10,13 @@ private:
 	int	index;
 	Contact	contacts[8];
 public:
-	PhoneBook(){};
+	PhoneBook(void)//コンストラクタはクラスが作成された瞬間に一番最初に呼び出される関数だから主に初期化がで使われる
+	{
+		this->count = 0;
+		this->index = 0;
+	};
 	~PhoneBook(){};
 	void add(void);
-	void search(void);
 	//void display(Contact in);
 };
 #endif
