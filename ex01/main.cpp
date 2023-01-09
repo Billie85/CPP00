@@ -1,8 +1,7 @@
+#include <stdlib.h>
 #include "Contact.hpp"
- #include <stdlib.h>
 #include "PhoneBook.hpp"
 
-//printf("%s\n", input.get_first_name().c_str());
 int main(void)
 {
 	std::string	s;
@@ -10,14 +9,14 @@ int main(void)
 
 	while (1)
 	{
-		s = readline ("Enter: -> ---ADD/SEARCH/EXIT--- <- : " );
+		std::cout <<  "Enter: -> ---ADD/SEARCH/EXIT--- <- : " ;
+		std::cin >> s ;
 		if (s == "ADD")
 			p.add();
 			else if(s == "SEARCH")
-			std::cout << "this is search" << std::endl;
+			p.search();
 			else if(s == "EXIT")
 			return (0);
-		system("leaks phone");
 	}
 	return (0);
 }

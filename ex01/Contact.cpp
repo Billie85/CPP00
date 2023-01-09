@@ -2,60 +2,69 @@
 
 void Contact::seting_first_name(void)
 {
-	while (1)
+	std::string s;
+
+	s = "";
+		std::cout << "input First Name : " << std::endl;
+	while(s == "")
 	{
-		first_name = readline("input First Name   :");
-		if (!first_name.empty())
-			break;
+		std::getline(std::cin, s);
 	}
-	this->first_name = first_name;
+	this->first_name = s;
 }
 
-void Contact::seting_last_name(void)
+ void Contact::seting_last_name(void)
 {
-	while(1)
+	std::string s;
+
+	s = "";
+		std::cout << "input Last Name : " << std::endl;
+	while(s == "")
 	{
-		last_name = readline("input Last Name     :");
-		if (!last_name.empty())
-			break;
+		std::getline(std::cin, s);
 	}
-	this->last_name = last_name;
+	this->last_name = s;
 }
 
 void Contact::seting_nick_name(void)
 {
-	while(1)
+	std::string s;
+
+	s = "";
+		std::cout << "input Nick Name : " << std::endl;
+	while(s == "")
 	{
-		nick_name = readline("input Nick Name     :");
-		if (!nick_name.empty())
-			break;
+		std::getline(std::cin, s);
 	}
-	this->nick_name = nick_name;
+	this->nick_name = s;
 }
 
 void Contact::seting_phone_number(void)
 {
-	while(1)
+	std::string s;
+
+	s = "";
+		std::cout << "input Phone Number : " << std::endl;
+	while(s == "")
 	{
-		phone_number = readline("phone number     :");
-		if (!phone_number.empty())
-			break;
+		std::getline(std::cin, s);
 	}
-	this->phone_number = phone_number;
+	this->phone_number = s;
 }
 
 void Contact::seting_darkest_secret(void)
 {
-	while(1)
-	{
-		darkest_secret = readline("input Last Name     :");
-		if (!darkest_secret.empty())
-			break;
-	}
-	this->darkest_secret = darkest_secret;
-}
+	std::string s;
 
-std::string Contact::get_first_name(void)
+	s = "";
+		std::cout << "input darkest secret : " << std::endl;
+	while(s == "")
+	{
+		std::getline(std::cin, s);
+	}
+	this->darkest_secret = s;
+}
+ std::string Contact::get_first_name(void)
 {
 	return(this->first_name);
 }

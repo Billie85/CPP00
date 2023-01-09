@@ -6,7 +6,6 @@ void PhoneBook::search(void)
 	std::cout << "| Index |First Name|Last Name |Nick Name |" << std::endl;
 	for (int i = 0; i < this->count; i++)
 	{
-	//Index
 		std::cout << std::setw(1) << '|' << \
 		std::setw(7) << i + 1 << std::setw(1) << '|' << \
 		std::setw(10) << ((this->contacts[(this->base + i) % 8].get_first_name().length() <= 10) ? (this->contacts[(this->base + i) % 8].get_first_name().substr(0,10)) : (this->contacts[(this->base + i) % 8].get_first_name().substr(0,9) + ".")  )<< std::setw(1) << '|' << \
@@ -16,8 +15,6 @@ void PhoneBook::search(void)
 	}
 }
 
-
-/* */
 void PhoneBook::add(void)
 {
 	this->contacts[(this->base + this->count) % 8].seting_first_name();
