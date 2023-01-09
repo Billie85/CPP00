@@ -1,4 +1,5 @@
 #include "Contact.hpp"
+ #include <stdlib.h>
 #include "PhoneBook.hpp"
 
 //printf("%s\n", input.get_first_name().c_str());
@@ -16,6 +17,7 @@ int main(void)
 			std::cout << "this is search" << std::endl;
 			else if(s == "EXIT")
 			return (0);
+		system("leaks phone");
 	}
 	return (0);
 }
